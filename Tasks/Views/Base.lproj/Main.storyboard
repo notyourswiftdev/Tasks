@@ -34,7 +34,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="MfE-aq-FYD"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowTaskDetailSegue" id="MfE-aq-FYD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -46,7 +46,7 @@
                     <navigationItem key="navigationItem" title="Tasks" id="2Sq-5m-R3f">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="QiC-9A-koY">
                             <connections>
-                                <segue destination="XJJ-Ml-nTH" kind="presentation" id="QPy-fe-YQt"/>
+                                <segue destination="XJJ-Ml-nTH" kind="presentation" identifier="CreateTaskModalSegue" modalPresentationStyle="fullScreen" id="QPy-fe-YQt"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -60,7 +60,7 @@
             <objects>
                 <navigationController id="XJJ-Ml-nTH" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j6d-Zn-24c">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -125,6 +125,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ie7-da-pmA"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="T5k-U6-v4E" id="o5n-2c-zvU"/>
+                        <outlet property="notesTextView" destination="tKF-bl-1Jp" id="Ju7-yy-lXy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

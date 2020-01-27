@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A390AD723DF679C00B03F2A /* Task+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A390AD623DF679C00B03F2A /* Task+Convenience.swift */; };
 		1A75603523DF582F005C9BAE /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75603423DF582F005C9BAE /* TasksTableViewController.swift */; };
 		1A75603B23DF586E005C9BAE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A75603A23DF586E005C9BAE /* CoreDataStack.swift */; };
 		1A8942AB23DF504900E6DF26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8942AA23DF504900E6DF26 /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A390AD623DF679C00B03F2A /* Task+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Convenience.swift"; sourceTree = "<group>"; };
 		1A75603423DF582F005C9BAE /* TasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
 		1A75603A23DF586E005C9BAE /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		1A8942A723DF504900E6DF26 /* Tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				1A8942BE23DF514700E6DF26 /* Tasks.xcdatamodeld */,
+				1A390AD623DF679C00B03F2A /* Task+Convenience.swift */,
 				1A75603623DF583E005C9BAE /* Views */,
 				1A75603923DF5854005C9BAE /* Controllers */,
 				1A8942C123DF515600E6DF26 /* Resources */,
@@ -190,6 +193,7 @@
 				1A8942C023DF514700E6DF26 /* Tasks.xcdatamodeld in Sources */,
 				1A75603523DF582F005C9BAE /* TasksTableViewController.swift in Sources */,
 				1A8942AF23DF504900E6DF26 /* TaskDetailViewController.swift in Sources */,
+				1A390AD723DF679C00B03F2A /* Task+Convenience.swift in Sources */,
 				1A75603B23DF586E005C9BAE /* CoreDataStack.swift in Sources */,
 				1A8942AB23DF504900E6DF26 /* AppDelegate.swift in Sources */,
 				1A8942AD23DF504900E6DF26 /* SceneDelegate.swift in Sources */,
