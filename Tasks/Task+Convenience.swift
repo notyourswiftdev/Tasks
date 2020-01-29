@@ -2,19 +2,33 @@
 //  Task+Convenience.swift
 //  Tasks
 //
-//  Created by Aaron Cleveland on 1/27/20.
-//  Copyright © 2020 Aaron Cleveland. All rights reserved.
+//  Created by Ben Gohlke on 1/27/20.
+//  Copyright © 2020 Lambda School. All rights reserved.
 //
 
 import Foundation
 import CoreData
 
-extension Task {
+enum TaskPriority: String {
+    case low
+    case normal
+    case high
+    case critical
+    
+    static var allPriorities: [TaskPriority] {
+        return [.low, .normal, .high, .critical]
+    }
+}
 
-    convenience init(name: String, notes: String? = nil, context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
+extension Task {
+    convenience init(name: String,
+                     notes: String? = nil,
+                     priority: TaskPriority = .normal,
+                     context: NSManagedObjectContext =
+                        CoreDataStack.shared.mainContext) {
         self.init(context: context)
         self.name = name
         self.notes = notes
+        self.priority = priority.rawValue
     }
-    
 }
